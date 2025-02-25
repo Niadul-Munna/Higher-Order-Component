@@ -1,5 +1,11 @@
-import Image from "next/image";
+import PersonOne from "@/components/person-one";
+import PersonTwo from "@/components/person-two";
 
 export default function Home() {
-  return <div>hello</div>;
+  return (
+    <div>
+      <PersonOne />
+      <PersonTwo />
+    </div>
+  );
 }
