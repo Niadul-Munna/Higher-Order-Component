@@ -1,14 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import UpdatedComponent from "@/hoc/handle-button";
+import React from "react";
 
-const PersonOne = () => {
-  const [data, setData] = useState(10);
-  const handleIncrease = () => {
-    setData(data + 10);
-  };
-  const handleDecrease = () => {
-    setData(data - 5);
-  };
+const PersonOne = ({ data, handleIncrease, handleDecrease }) => {
   return (
     <div className="flex gap-2 items-center">
       <h1>
@@ -31,4 +25,4 @@ const PersonOne = () => {
   );
 };
 
-export default PersonOne;
+export default UpdatedComponent(PersonOne);
